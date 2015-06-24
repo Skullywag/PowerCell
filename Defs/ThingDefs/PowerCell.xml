@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+  <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>PowerCell</defName>
+    <label>power Cell</label>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Things/Building/PowerCell</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <altitudeLayer>Waist</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
+    <fillPercent>0.5</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToMake>4000</WorkToMake>
+      <Flammability>1.0</Flammability>
+      <Beauty>-20</Beauty>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <description>Harnesses power from the mechanoid powercell it houses. Produces a lot of heat.</description>
+    <size>(3,3)</size>
+    <building>
+      <ignoreNeedsPower>true</ignoreNeedsPower>
+    </building>
+    <costList>
+      <Plasteel>200</Plasteel>
+      <MechanoidPCell>1</MechanoidPCell>
+    </costList>
+    <comps>
+      <li>
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>-2000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+        <powerToggleable>false</powerToggleable>
+      </li>
+      <li>
+        <compClass>CompGlower</compClass>
+        <glowRadius>2</glowRadius>
+        <glowColor>(0,255,150,0)</glowColor>
+      </li>
+      <li>
+        <compClass>CompHeatPusher</compClass>
+        <heatPerSecond>30</heatPerSecond>
+        <heatPushMaxTemperature>250</heatPushMaxTemperature>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Power</designationCategory>
+    <staticSunShadowHeight>0.50</staticSunShadowHeight>
+  </ThingDef>
+
+</Buildings>

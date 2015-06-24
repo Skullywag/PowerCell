@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>PowerCell</name>
+	<author>Skullywag</author>
+	<targetVersion>Alpha 11</targetVersion>
+	<description>Adds a drop to the crashed ship part which can be used to build a passive power generating structure.
+
+Produces 2000W of power but creates a lot of heat.</description>
+</ModMetaData>
