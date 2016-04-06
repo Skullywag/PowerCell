@@ -3,6 +3,7 @@
 
   <ThingDef Name="BuildingBase" Abstract="True">
     <category>Building</category>
+    <thingClass>Building</thingClass>
     <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
     <selectable>true</selectable>
     <drawerType>MapMeshAndRealTime</drawerType>
@@ -43,18 +44,18 @@
       <MechanoidPCell>1</MechanoidPCell>
     </costList>
     <comps>
-      <li>
+      <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
         <basePowerConsumption>-2000</basePowerConsumption>
         <transmitsPower>true</transmitsPower>
-        <powerToggleable>false</powerToggleable>
       </li>
-      <li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Glower">
         <compClass>CompGlower</compClass>
         <glowRadius>2</glowRadius>
         <glowColor>(0,255,150,0)</glowColor>
       </li>
-      <li>
+      <li Class="CompProperties_HeatPusher">
         <compClass>CompHeatPusher</compClass>
         <heatPerSecond>30</heatPerSecond>
         <heatPushMaxTemperature>250</heatPushMaxTemperature>
