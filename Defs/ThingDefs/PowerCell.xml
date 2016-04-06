@@ -58,7 +58,7 @@
       <li Class="CompProperties_HeatPusher">
         <compClass>CompHeatPusher</compClass>
         <heatPerSecond>30</heatPerSecond>
-        <heatPushMaxTemperature>250</heatPushMaxTemperature>
+        <heatPushMaxTemperature>210</heatPushMaxTemperature>
       </li>
     </comps>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
