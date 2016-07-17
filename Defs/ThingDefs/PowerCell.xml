@@ -22,7 +22,7 @@
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(3,3)</drawSize>
     </graphicData>
-    <altitudeLayer>Waist</altitudeLayer>
+    <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
     <pathCost>70</pathCost>
     <fillPercent>0.5</fillPercent>
@@ -64,6 +64,9 @@
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <designationCategory>Power</designationCategory>
     <staticSunShadowHeight>0.50</staticSunShadowHeight>
+    <researchPrerequisites>
+      <li>MechanoidPowerSource</li>
+    </researchPrerequisites>
   </ThingDef>
 
 </Buildings>
