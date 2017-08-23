@@ -3,7 +3,7 @@
 
   <ResearchProjectDef>
     <defName>MechanoidPowerSource</defName>
-    <label>mechanoid power course</label>
+    <label>mechanoid power source</label>
     <description>Mechanoids have been powering themselves for hundreds of years, studying them and their technology will reveal a way to use their power sources.</description>
     <baseCost>1200</baseCost>
     <techLevel>Spacer</techLevel>

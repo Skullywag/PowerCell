@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="CrashedPsychicEmanatorShipPart"]/killedLeavings</xpath>
+		<value>
+      <MechanoidPCell>1</MechanoidPCell>	
+  </value>
+	</Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="CrashedPoisonShipPart"]/killedLeavings</xpath>
+    <value>
+      <MechanoidPCell>1</MechanoidPCell>
+    </value>
+  </Operation>
+
+</Patch>
+
